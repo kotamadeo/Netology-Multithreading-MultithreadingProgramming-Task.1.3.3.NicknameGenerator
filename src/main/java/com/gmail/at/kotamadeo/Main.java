@@ -3,7 +3,7 @@ package com.gmail.at.kotamadeo;
 import java.util.concurrent.Executors;
 
 public class Main {
-private static int SIZE = 100_000;
+private static final int SIZE = 100_000;
     public static void main(String[] args) {
         NicknameGenerator nicknameGenerator = new NicknameGenerator();
         nicknameGenerator.setExecutorService(Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors()));
